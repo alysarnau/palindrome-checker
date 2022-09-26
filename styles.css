@@ -23,6 +23,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--light-blue);
 }
 
 p {
@@ -35,7 +36,61 @@ img {
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.word-container {
+    width: 40rem;
+    background-color: var(--white);
+    padding: 5rem 3rem;
+    border-radius: 5px;
+}
+
+input {
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--color-sec);
+    padding: 1rem 5px;
+    font-size: 1.6rem;
+}
+
+#checkButton {
+    width: 25%;
+    padding: 1rem 5px;
+    border: none;
+    outline: none;
+    background: var(--color-primary);
+    color: var(--white);
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 6px #999;
+}
+
+#checkButton:hover {
+    background-color: var(--color-sec);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+#checkButton:active {
+    background-color: var(--color-sec);
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }
+
+#result {
+    font-size: 1.6em;
+    margin-top: 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-grey)
 }
