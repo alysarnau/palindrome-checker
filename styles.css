@@ -53,6 +53,12 @@ img {
     border-radius: 5px;
 }
 
+#title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
 input {
     width: 70%;
     border: none;
